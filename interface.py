@@ -24,11 +24,11 @@ class MyFrame ( wx.Frame ):
 		self.but3 = wx.Button( sbSizer2.GetStaticBox(), 3, u"Angry", wx.DefaultPosition, wx.DefaultSize, 0 )
 		sbSizer2.Add( self.but3, 0, wx.ALL|wx.EXPAND, 5 )
 		
-		#self.but4 = wx.Button( sbSizer2.GetStaticBox(), 4, u"Sleepy", wx.DefaultPosition, wx.DefaultSize, 0 )
-		#sbSizer2.Add( self.but4, 0, wx.ALL|wx.EXPAND, 5 )
+		self.but4 = wx.Button( sbSizer2.GetStaticBox(), 4, u"Sleepy", wx.DefaultPosition, wx.DefaultSize, 0 )
+		sbSizer2.Add( self.but4, 0, wx.ALL|wx.EXPAND, 5 )
 		
-		#self.but5 = wx.Button( sbSizer2.GetStaticBox(), 5, u"Indifferent", wx.Point( -10,-1 ), wx.DefaultSize, 0 )
-		#sbSizer2.Add( self.but5, 0, wx.ALL|wx.EXPAND, 5 )
+		self.but5 = wx.Button( sbSizer2.GetStaticBox(), 5, u"Indifferent", wx.Point( -10,-1 ), wx.DefaultSize, 0 )
+		sbSizer2.Add( self.but5, 0, wx.ALL|wx.EXPAND, 5 )
 		
 		#self.but6 = wx.Button( sbSizer2.GetStaticBox(), 6, u"Quit", wx.DefaultPosition, wx.DefaultSize, 0 )
 		#sbSizer2.Add( self.but6, 0, wx.ALL|wx.EXPAND, 5 )
@@ -43,8 +43,8 @@ class MyFrame ( wx.Frame ):
 		self.but1.Bind( wx.EVT_BUTTON, self.ShowIcon,id=self.but1.GetId() )
 		self.but2.Bind( wx.EVT_BUTTON, self.ShowIcon,id=self.but2.GetId() )
 		self.but3.Bind( wx.EVT_BUTTON, self.ShowIcon,id=self.but3.GetId() )
-		#self.but4.Bind( wx.EVT_BUTTON, self.ShowIcon,id=self.but4.GetId() )
-		#self.but5.Bind( wx.EVT_BUTTON, self.ShowIcon,id=self.but5.GetId() )
+		self.but4.Bind( wx.EVT_BUTTON, self.ShowIcon,id=self.but4.GetId() )
+		self.but5.Bind( wx.EVT_BUTTON, self.ShowIcon,id=self.but5.GetId() )
 		#self.but6.Bind( wx.EVT_BUTTON, self.Quit)
 	
 	def __del__( self ):
